@@ -49,7 +49,7 @@ col1, col2 = st.columns(2)
 for i, app in enumerate(apps):
     with col1 if i % 2 == 0 else col2:
         st.markdown("----", unsafe_allow_html=True)
-        st.image(app["icon"], width=96)
+        st.markdown(f"<div style='text-align: center;'><img src='{app['icon']}' width='96'></div>", unsafe_allow_html=True)
         st.markdown(f"<div style='text-align: center;'><h4>{app['name']}</h4></div>", unsafe_allow_html=True)
         st.markdown(f"<div style='text-align: center;'>{app['desc']}</div>", unsafe_allow_html=True)
         st.markdown(
