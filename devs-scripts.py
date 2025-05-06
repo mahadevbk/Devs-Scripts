@@ -51,10 +51,20 @@ card_height = 350
 # Distribute apps evenly between the two columns
 for i, app in enumerate(apps):
     with col1 if i % 2 == 0 else col2:
-        st.markdown(
-            f"""
-            <div style="border: 1px solid #1e3a8a; border-radius: 10px; padding: 15px; text-align: center;
-                        height: {card_height}px; display: flex; flex-direction: column; justify-content: space-between;
-                        background-color: #022e85; box-shadow: 2px 2px 8px rgba(0,0,0,0.4);">
-                <img src="{app['icon']}" width="96" style="margin: 0 auto;" />
-                <h4 style="margin: 10px 0 5px
+        html_card = f"""
+        <div style="border: 1px solid #1e3a8a; border-radius: 10px; padding: 15px; text-align: center;
+                    height: {card_height}px; display: flex; flex-direction: column; justify-content: space-between;
+                    background-color: #022e85; box-shadow: 2px 2px 8px rgba(0,0,0,0.4);">
+            <img src="{app['icon']}" width="96" style="margin: 0 auto;" />
+            <h4 style="margin: 10px 0 5px 0; color: #ffffff;">{app['name']}</h4>
+            <div style="flex-grow: 1; margin-bottom: 10px; color: #d0d8ff;">{app['desc']}</div>
+            <a href="{app['url']}" target="_blank">
+                <button style="padding:8px 20px;font-size:16px;border:none;background-color:#4CAF50;
+                                color:white;border-radius:5px;cursor:pointer;">Open App</button>
+            </a>
+        </div>
+        """
+        st.markdown(html_card, unsafe_allow_html=True)
+
+st.markdown("----")
+st.info("Built with ❤️ using [Streamlit](https://streamlit.io/) — free and open source.")
