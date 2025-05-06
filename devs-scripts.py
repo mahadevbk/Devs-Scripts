@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 st.title("🧰 Dev's Streamlit App Hub")
-st.markdown("A collection of simple, free, and open-source Streamlit tools for everyday use.")
+st.markdown("A collection of simple, free, and open-source tools for everyday use. Code on Github and hosted on Streamlit.io cloud.")
 
 # --- Font Registration ---
 font_path = os.path.join(os.path.dirname(__file__), "PermanentMarker-Regular.ttf") # Assumes font is in the same directory
