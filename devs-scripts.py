@@ -53,19 +53,9 @@ for i, app in enumerate(apps):
     with col1 if i % 2 == 0 else col2:
         st.markdown(
             f"""
-            <div style="border: 1px solid #eee; border-radius: 10px; padding: 15px; text-align: center; height: {card_height}px;
-                        display: flex; flex-direction: column; justify-content: space-between; background-color: #f9f9f9; box-shadow: 2px 2px 6px rgba(0,0,0,0.05);">
+            <div style="border: 1px solid #1e3a8a; border-radius: 10px; padding: 15px; text-align: center;
+                        height: {card_height}px; display: flex; flex-direction: column; justify-content: space-between;
+                        background-color: #022e85; box-shadow: 2px 2px 8px rgba(0,0,0,0.4);">
                 <img src="{app['icon']}" width="96" style="margin: 0 auto;" />
-                <h4 style="margin: 10px 0 5px 0;">{app['name']}</h4>
-                <div style="flex-grow: 1; margin-bottom: 10px;">{app['desc']}</div>
-                <a href="{app['url']}" target="_blank">
-                    <button style="padding:8px 20px;font-size:16px;border:none;background-color:#4CAF50;
-                                    color:white;border-radius:5px;cursor:pointer;">Open App</button>
-                </a>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+                <h4 style="margin: 10px 0 5px
 
-st.markdown("----")
-st.info("Built with ❤️ using [Streamlit](https://streamlit.io/) — free and open source.")
