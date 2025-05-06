@@ -58,4 +58,3 @@ for i, app in enumerate(apps):
                         background-color: #022e85; box-shadow: 2px 2px 8px rgba(0,0,0,0.4);">
                 <img src="{app['icon']}" width="96" style="margin: 0 auto;" />
                 <h4 style="margin: 10px 0 5px
-
