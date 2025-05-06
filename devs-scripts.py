@@ -1,5 +1,6 @@
 import streamlit as st
-
+import matplotlib.font_manager as fm
+import os
 
 st.set_page_config(
     page_title="Dev's Streamlit App Hub",
@@ -10,6 +11,19 @@ st.set_page_config(
 st.title("🧰 Dev's Streamlit App Hub")
 st.markdown("A collection of simple, free, and open-source Streamlit tools for everyday use.")
 
+# --- Font Registration ---
+font_path = os.path.join(os.path.dirname(__file__), "PermanentMarker-Regular.ttf") # Assumes font is in the same directory
+# If it's in a subfolder, e.g., "fonts", use:
+# font_path = os.path.join(os.path.dirname(__file__), "fonts", "PermanentMarker-Regular.ttf")
+
+try:
+    fm.font_manager.fontManager.addfont(font_path)
+    font_name = fm.FontProperties(fname=font_path).get_name()
+except Exception as e:
+    st.error(f"Error loading font: {e}. Using default font.")
+    font_name = None  # Use default font
+
+# --- App Data ---
 apps = [
     {
         "name": "Passport Photo Editor",
@@ -59,11 +73,11 @@ for i in range(0, len(apps), 2):
                         height: {card_height}px; display: flex; flex-direction: column; justify-content: space-between;
                         background-color: #022e85; box-shadow: 2px 2px 8px rgba(0,0,0,0.4); margin-bottom: {card_spacing}px;">
                 <img src="{app['icon']}" width="96" style="margin: 0 auto;" />
-                <h4 style="margin: 10px 0 5px 0; color: #ffffff;">{app['name']}</h4>
-                <div style="flex-grow: 1; margin-bottom: 10px; color: #d0d8ff;">{app['desc']}</div>
+                <h4 style="margin: 10px 0 5px 0; color: #ffffff; font-family: '{font_name}', sans-serif;">{app['name']}</h4>
+                <div style="flex-grow: 1; margin-bottom: 10px; color: #d0d8ff; font-family: '{font_name}', sans-serif;">{app['desc']}</div>
                 <a href="{app['url']}" target="_blank">
                     <button style="padding:8px 20px;font-size:16px;border:none;background-color:#4CAF50;
-                                    color:white;border-radius:5px;cursor:pointer;">Open App</button>
+                                    color:white;border-radius:5px;cursor:pointer; font-family: '{font_name}', sans-serif;">Open App</button>
                 </a>
             </div>
             """
