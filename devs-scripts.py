@@ -17,13 +17,16 @@ font_path = os.path.join(os.path.dirname(__file__), "PermanentMarker-Regular.ttf
 # font_path = os.path.join(os.path.dirname(__file__), "fonts", "PermanentMarker-Regular.ttf")
 
 try:
-    fm.addfont(font_path)
+    font_manager = fm.fontManager
+    font_manager.addfont(font_path)
     prop = fm.FontProperties(fname=font_path)
     font_name = prop.get_name()
 except Exception as e:
     st.error(f"Error loading font: {e}. Using default font.")
     font_name = None  # Use default font
 
+# --- App Data ---
+# ... (rest of your app data and card display code remains the same)
 # --- App Data ---
 apps = [
     {
