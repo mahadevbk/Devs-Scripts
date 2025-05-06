@@ -45,17 +45,25 @@ apps = [
 # Create two columns
 col1, col2 = st.columns(2)
 
+# Fixed height for each card (in px)
+card_height = 350
+
 # Distribute apps evenly between the two columns
 for i, app in enumerate(apps):
     with col1 if i % 2 == 0 else col2:
-        st.markdown("----", unsafe_allow_html=True)
-        st.markdown(f"<div style='text-align: center;'><img src='{app['icon']}' width='96'></div>", unsafe_allow_html=True)
-        st.markdown(f"<div style='text-align: center;'><h4>{app['name']}</h4></div>", unsafe_allow_html=True)
-        st.markdown(f"<div style='text-align: center;'>{app['desc']}</div>", unsafe_allow_html=True)
         st.markdown(
-            f'<div style="text-align: center;"><a href="{app["url"]}" target="_blank">'
-            f'<button style="padding:8px 20px;font-size:16px;border:none;background-color:#4CAF50;color:white;border-radius:5px;cursor:pointer;">Open App</button>'
-            f'</a></div>',
+            f"""
+            <div style="border: 1px solid #eee; border-radius: 10px; padding: 15px; text-align: center; height: {card_height}px;
+                        display: flex; flex-direction: column; justify-content: space-between; background-color: #f9f9f9; box-shadow: 2px 2px 6px rgba(0,0,0,0.05);">
+                <img src="{app['icon']}" width="96" style="margin: 0 auto;" />
+                <h4 style="margin: 10px 0 5px 0;">{app['name']}</h4>
+                <div style="flex-grow: 1; margin-bottom: 10px;">{app['desc']}</div>
+                <a href="{app['url']}" target="_blank">
+                    <button style="padding:8px 20px;font-size:16px;border:none;background-color:#4CAF50;
+                                    color:white;border-radius:5px;cursor:pointer;">Open App</button>
+                </a>
+            </div>
+            """,
             unsafe_allow_html=True
         )
 
