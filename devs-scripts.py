@@ -32,7 +32,7 @@ apps = [
     {
         "name": "Passport Photo / Polaroid Editor",
         "url": "https://passportphotoeditor.streamlit.app/",
-        "desc": "Format your passport or visa photos according to country-specific dimensions. Auto-centering and resizing included. Also creates Polaroid style images",
+        "desc": "Format your passport photos according to country-specific rqmts. (Auto-centering and resizing ). Also creates Polaroid style images",
         "icon": "https://img.icons8.com/color/96/passport.png"
     },
     {
