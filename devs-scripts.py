@@ -42,15 +42,22 @@ apps = [
     },
 ]
 
-for app in apps:
-    st.markdown("----")
-    st.image(app["icon"], width=96)
-    st.markdown(f"### {app['name']}")
-    st.write(app["desc"])
-    st.markdown(
-        f'<a href="{app["url"]}" target="_blank"><button style="padding:8px 20px;font-size:16px;border:none;background-color:#4CAF50;color:white;border-radius:5px;cursor:pointer;">Open App</button></a>',
-        unsafe_allow_html=True
-    )
+# Create two columns
+col1, col2 = st.columns(2)
+
+# Distribute apps evenly between the two columns
+for i, app in enumerate(apps):
+    with col1 if i % 2 == 0 else col2:
+        st.markdown("----", unsafe_allow_html=True)
+        st.image(app["icon"], width=96)
+        st.markdown(f"<div style='text-align: center;'><h4>{app['name']}</h4></div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: center;'>{app['desc']}</div>", unsafe_allow_html=True)
+        st.markdown(
+            f'<div style="text-align: center;"><a href="{app["url"]}" target="_blank">'
+            f'<button style="padding:8px 20px;font-size:16px;border:none;background-color:#4CAF50;color:white;border-radius:5px;cursor:pointer;">Open App</button>'
+            f'</a></div>',
+            unsafe_allow_html=True
+        )
 
 st.markdown("----")
 st.info("Built with ❤️ using [Streamlit](https://streamlit.io/) — free and open source.")
