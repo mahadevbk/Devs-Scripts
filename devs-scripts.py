@@ -17,8 +17,9 @@ font_path = os.path.join(os.path.dirname(__file__), "PermanentMarker-Regular.ttf
 # font_path = os.path.join(os.path.dirname(__file__), "fonts", "PermanentMarker-Regular.ttf")
 
 try:
-    fm.font_manager.fontManager.addfont(font_path)
-    font_name = fm.FontProperties(fname=font_path).get_name()
+    fm.addfont(font_path)
+    prop = fm.FontProperties(fname=font_path)
+    font_name = prop.get_name()
 except Exception as e:
     st.error(f"Error loading font: {e}. Using default font.")
     font_name = None  # Use default font
