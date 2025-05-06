@@ -1,18 +1,5 @@
 import streamlit as st
 
-# Add custom CSS for the font
-st.markdown(
-    """
-    <style>
-        @font-face {
-            font-family: 'PermanentMarker';
-            src: url('fonts/PermanentMarker-Regular.ttf') format('truetype');
-        }
-        body {
-            font-family: 'PermanentMarker', sans-serif;
-        }
-    </style>
-    """, unsafe_allow_html=True )
 
 st.set_page_config(
     page_title="Dev's Streamlit App Hub",
