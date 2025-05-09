@@ -59,6 +59,12 @@ apps = [
         "desc": "Download videos from supported platforms in various resolutions with just a link.",
         "icon": "https://img.icons8.com/color/96/download.png"
     },
+    {
+    "name": "Polaroid Frame Generator",
+    "url": "https://devs-polaroid.streamlit.app/",
+    "desc": "Create stylish Polaroid-style frames for your photos. Great for social media and printing.",
+    "icon": "https://img.icons8.com/color/96/instant-camera.png"
+    },
 ]
 
 # Set card height and spacing
