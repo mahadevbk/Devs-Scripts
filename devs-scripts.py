@@ -30,7 +30,7 @@ except Exception as e:
 # --- App Data ---
 apps = [
     {
-        "name": "Passport / Polaroid Photo Editor",
+        "name": "Passport Photo Editor",
         "url": "https://passportphotoeditor.streamlit.app/",
         "desc": "Format passport photos according to country-specific rqmts. (Auto-centering and resizing ). Also creates Polaroid style images",
         "icon": "https://img.icons8.com/color/96/passport.png"
