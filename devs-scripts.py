@@ -30,12 +30,6 @@ except Exception as e:
 # --- App Data ---
 apps = [
     {
-        "name": "Passport Photo Editor",
-        "url": "https://passportphotoeditor.streamlit.app/",
-        "desc": "Format passport photos according to country-specific rqmts. (Auto-centering and resizing ). Also creates Polaroid style images",
-        "icon": "https://img.icons8.com/color/96/passport.png"
-    },
-    {
         "name": "PDF Editor",
         "url": "https://devs-pdfeditor.streamlit.app/",
         "desc": "Merge, split, and rearrange PDF files directly in your browser. No signup or installation required.",
@@ -48,9 +42,15 @@ apps = [
         "icon": "https://img.icons8.com/color/96/remove-image.png"
     },
     {
+    "name": "Polaroid Frame Generator",
+    "url": "https://devs-polaroid.streamlit.app/",
+    "desc": "Create stylish Polaroid-style frames for your photos. Great for social media and printing.",
+    "icon": "https://img.icons8.com/fluency/96/polaroid.png"
+    },
+    {
         "name": "Curated Top Ten",
         "url": "https://curatedtopten.streamlit.app/",
-        "desc": "Browse and explore fun top-ten lists on movies, books, games, and more — all in one place.",
+        "desc": "Browse and explore top-ten lists on movies and tv series from TMDB , OMDB, (IMDB & RT experimental.)",
         "icon": "https://img.icons8.com/color/96/rating.png"
     },
     {
@@ -60,10 +60,10 @@ apps = [
         "icon": "https://img.icons8.com/color/96/download.png"
     },
     {
-    "name": "Polaroid Frame Generator",
-    "url": "https://devs-polaroid.streamlit.app/",
-    "desc": "Create stylish Polaroid-style frames for your photos. Great for social media and printing.",
-    "icon": "https://img.icons8.com/fluency/96/polaroid.png"
+        "name": "Passport Photo Editor",
+        "url": "https://passportphotoeditor.streamlit.app/",
+        "desc": "Format passport photos according to country-specific rqmts. (Auto-centering and resizing ). Also creates Polaroid style images",
+        "icon": "https://img.icons8.com/color/96/passport.png"
     },
 ]
 
