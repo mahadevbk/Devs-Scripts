@@ -65,6 +65,12 @@ apps = [
         "desc": "Format passport photos according to country-specific rqmts. (Auto-centering and resizing ). Also creates Polaroid style images",
         "icon": "https://img.icons8.com/color/96/passport.png"
     },
+    {
+        "name": ".srt Subtitles Downloader",
+        "url": "https://subtitles-downloader.streamlit.app/",
+        "desc": "Paste the Video file name (upto 5 at a time) and the app search, download and rename the .srt file.",
+       "icon": "https://img.icons8.com/fluency/96/subtitles.png"
+    },
 ]
 
 # Set card height and spacing
