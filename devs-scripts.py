@@ -69,7 +69,7 @@ apps = [
         "name": ".srt Subtitles Downloader",
         "url": "https://subtitles-downloader.streamlit.app/",
         "desc": "Paste the Video file name (upto 5 at a time) and the app search, download and rename the .srt file.",
-       "icon": "https://img.icons8.com/fluency/96/subtitles.png"
+       "icon": "https://img.icons8.com/ios-filled/50/000000/subtitles.png"
     },
 ]
 
