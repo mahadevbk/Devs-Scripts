@@ -9,8 +9,8 @@ st.set_page_config(
 )
 
 st.title("🧰 Dev's Streamlit App Hub")
-st.markdown("A collection of simple, free, and open-source tools for everyday use. Code on Github and hosted on Streamlit.io cloud.")
-st.markdown("{ Apps may be hibernating and need to be woken up }")
+st.markdown("A collection of simple, free, and open-source tools for everyday use. Code on Github and hosted on Streamlit.io cloud. { Apps may be hibernating and need to be woken up }")
+
 # --- Font Registration ---
 font_path = os.path.join(os.path.dirname(__file__), "PermanentMarker-Regular.ttf") # Assumes font is in the same directory
 # If it's in a subfolder, e.g., "fonts", use:
