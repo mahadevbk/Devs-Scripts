@@ -75,7 +75,7 @@ apps = [
         "name": "Mini Tournament Organiser",
         "url": "https://tournament-organiser.streamlit.app/",
         "desc": "One Day mini tournament organiser with PDF output.",
-       "icon": "https://img.icons8.com/color/48/tennis-court.png"
+       "icon": "court.png"
     },
 ]
 
