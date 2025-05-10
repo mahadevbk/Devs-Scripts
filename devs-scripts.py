@@ -106,4 +106,4 @@ for i in range(0, len(apps), 2):
             col.markdown(html_card, unsafe_allow_html=True)
 
 st.markdown("----")
-st.info("Built with ❤️ using [Streamlit](https://streamlit.io/) — free and open source.")
+st.info("Built with ❤️ using [Streamlit](https://streamlit.io/) — free and open source. Click here to go to other Scripts by [dev](https://devs-scripts.streamlit.app/) on Streamlit.")
