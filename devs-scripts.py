@@ -71,7 +71,7 @@ apps = [
         "desc": "Paste the Video file name (upto 5 at a time) and the app search, download and rename the .srt file.",
        "icon": "https://img.icons8.com/ios-filled/50/000000/subtitles.png"
     },
-   {
+    {
         "name": "Mini Tournament Organiser",
         "url": "https://tournament-organiser.streamlit.app/",
         "desc": "One Day mini tournament organiser with PDF output.",
