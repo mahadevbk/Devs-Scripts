@@ -77,6 +77,12 @@ apps = [
         "desc": "One Day mini tournament organiser with PDF output.",
        "icon": "https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/court.png"
     },
+    {
+        "name": "Photo Report PDF Generator",
+        "url": "https://https://photoreport.streamlit.app/",
+        "desc": "A simple Photo report generator with PDF output.",
+        "icon": "https://cdn.iconfinder.com/data/icons/basic-ui-elements-color/700/07_clipboard-512.png"
+    },
 ]
 
 # Set card height and spacing
