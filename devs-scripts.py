@@ -9,17 +9,17 @@ st.set_page_config(
 st.markdown("""
 <style>
 @font-face {
-    font-family: 'Permanent Marker';
-    src: url('https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/PermanentMarker-Regular.ttf') format('truetype');
+    font-family: 'GiveYouGlory';
+    src: url('https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/GiveYouGlory-Regular.ttf') format('truetype');
 }
 h4, div, button {
-    font-family: 'Permanent Marker', cursive !important;
+    font-family: 'GiveYouGlory', cursive !important;
 }
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<h1 style="font-family: 'Permanent Marker', cursive; font-size: 3rem; margin-bottom: 0.3em;">
+<h1 style="font-family: 'GiveYouGlory', cursive; font-size: 3rem; margin-bottom: 0.3em;">
     🧰 Dev's Streamlit App Hub
 </h1>
 """, unsafe_allow_html=True)
