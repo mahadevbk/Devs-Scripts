@@ -1,5 +1,4 @@
 import streamlit as st
-import matplotlib.font_manager as fm
 import os
 
 st.set_page_config(
@@ -8,25 +7,22 @@ st.set_page_config(
     page_icon="🧰"
 )
 
+# Inject CSS to load the Permanent Marker font from the static folder
+st.markdown("""
+<style>
+@font-face {
+    font-family: 'Permanent Marker';
+    src: url('/static/PermanentMarker-Regular.ttf') format('truetype');
+}
+h4, div, button {
+    font-family: 'Permanent Marker', cursive !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.title("🧰 Dev's Streamlit App Hub")
 st.markdown("A collection of simple, free, and open-source tools for everyday use. Code on Github and hosted on Streamlit.io cloud. { Apps may be hibernating and need to be woken up }")
 
-# --- Font Registration ---
-font_path = os.path.join(os.path.dirname(__file__), "PermanentMarker-Regular.ttf") # Assumes font is in the same directory
-# If it's in a subfolder, e.g., "fonts", use:
-# font_path = os.path.join(os.path.dirname(__file__), "fonts", "PermanentMarker-Regular.ttf")
-
-try:
-    font_manager = fm.fontManager
-    font_manager.addfont(font_path)
-    prop = fm.FontProperties(fname=font_path)
-    font_name = prop.get_name()
-except Exception as e:
-    st.error(f"Error loading font: {e}. Using default font.")
-    font_name = None  # Use default font
-
-# --- App Data ---
-# ... (rest of your app data and card display code remains the same)
 # --- App Data ---
 apps = [
     {
@@ -42,10 +38,10 @@ apps = [
         "icon": "https://img.icons8.com/color/96/remove-image.png"
     },
     {
-    "name": "Polaroid Frame Generator",
-    "url": "https://devs-polaroid.streamlit.app/",
-    "desc": "Create stylish Polaroid-style frames for your photos. Great for social media and printing.",
-    "icon": "https://img.icons8.com/fluency/96/polaroid.png"
+        "name": "Polaroid Frame Generator",
+        "url": "https://devs-polaroid.streamlit.app/",
+        "desc": "Create stylish Polaroid-style frames for your photos. Great for social media and printing.",
+        "icon": "https://img.icons8.com/fluency/96/polaroid.png"
     },
     {
         "name": "Curated Top Ten",
@@ -69,13 +65,13 @@ apps = [
         "name": ".srt Subtitles Downloader",
         "url": "https://subtitles-downloader.streamlit.app/",
         "desc": "Paste the Video file name (upto 5 at a time) and the app search, download and rename the .srt file.",
-       "icon": "https://img.icons8.com/ios-filled/50/000000/subtitles.png"
+        "icon": "https://img.icons8.com/ios-filled/50/000000/subtitles.png"
     },
     {
         "name": "Mini Tournament Organiser",
         "url": "https://tournament-organiser.streamlit.app/",
         "desc": "One Day mini tournament organiser with PDF output.",
-       "icon": "https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/court.png"
+        "icon": "https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/court.png"
     },
     {
         "name": "Photo Report PDF Generator",
@@ -85,11 +81,9 @@ apps = [
     },
 ]
 
-# Set card height and spacing
 card_height = 350
 card_spacing = 25  # px
 
-# Display cards with equal horizontal and vertical spacing
 for i in range(0, len(apps), 2):
     cols = st.columns([1, 0.1, 1])  # col1 | spacer | col2
 
@@ -101,11 +95,11 @@ for i in range(0, len(apps), 2):
                         height: {card_height}px; display: flex; flex-direction: column; justify-content: space-between;
                         background-color: #022e85; box-shadow: 2px 2px 8px rgba(0,0,0,0.4); margin-bottom: {card_spacing}px;">
                 <img src="{app['icon']}" width="96" style="margin: 0 auto;" />
-                <h4 style="margin: 10px 0 5px 0; color: #ffffff; font-family: '{font_name}', sans-serif;">{app['name']}</h4>
-                <div style="flex-grow: 1; margin-bottom: 10px; color: #d0d8ff; font-family: '{font_name}', sans-serif;">{app['desc']}</div>
+                <h4 style="margin: 10px 0 5px 0; color: #ffffff; font-family: 'Permanent Marker', cursive;">{app['name']}</h4>
+                <div style="flex-grow: 1; margin-bottom: 10px; color: #d0d8ff; font-family: 'Permanent Marker', cursive;">{app['desc']}</div>
                 <a href="{app['url']}" target="_blank">
                     <button style="padding:8px 20px;font-size:16px;border:none;background-color:#4CAF50;
-                                    color:white;border-radius:5px;cursor:pointer; font-family: '{font_name}', sans-serif;">Open App</button>
+                                    color:white;border-radius:5px;cursor:pointer; font-family: 'Permanent Marker', cursive;">Open App</button>
                 </a>
             </div>
             """
