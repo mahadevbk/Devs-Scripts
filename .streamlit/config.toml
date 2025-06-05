@@ -2,3 +2,6 @@
 base="dark"
 backgroundColor="#001e5c"
 secondaryBackgroundColor="#022e85"
+[general]
+pageTitle = "Photo Report PDF Generator"
+favicon = "https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/photoreporticon.png"
