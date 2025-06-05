@@ -81,7 +81,7 @@ apps = [
         "name": "Photo Report PDF Generator",
         "url": "https://photoreport.streamlit.app/",
         "desc": "A simple Photo report generator with PDF output.",
-        "icon": "https://cdn.iconfinder.com/data/icons/basic-ui-elements-color/700/07_clipboard-512.png"
+        "icon": "https://github.com/mahadevbk/Devs-Scripts/blob/main/photoreporticon.png"
     },
 ]
 
