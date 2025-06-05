@@ -18,9 +18,11 @@ h4, div, button {
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🧰 Dev's Streamlit App Hub")
-st.markdown("A collection of simple, free, and open-source tools for everyday use. Code on Github and hosted on Streamlit.io cloud. { Apps may be hibernating and need to be woken up }")
-
+st.markdown("""
+<h1 style="font-family: 'Permanent Marker', cursive; font-size: 3rem; margin-bottom: 0.3em;">
+    🧰 Dev's Streamlit App Hub
+</h1>
+""", unsafe_allow_html=True)
 # Your apps data & rest of the code here...
 # (Same as before, use 'Permanent Marker' in font-family styles in cards)
 
