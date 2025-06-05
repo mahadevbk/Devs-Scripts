@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 
 st.set_page_config(
     page_title="Dev's Streamlit App Hub",
@@ -7,12 +6,11 @@ st.set_page_config(
     page_icon="🧰"
 )
 
-# Inject CSS to load the Permanent Marker font from the static folder
 st.markdown("""
 <style>
 @font-face {
     font-family: 'Permanent Marker';
-    src: url('/static/PermanentMarker-Regular.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/PermanentMarker-Regular.ttf') format('truetype');
 }
 h4, div, button {
     font-family: 'Permanent Marker', cursive !important;
@@ -22,6 +20,10 @@ h4, div, button {
 
 st.title("🧰 Dev's Streamlit App Hub")
 st.markdown("A collection of simple, free, and open-source tools for everyday use. Code on Github and hosted on Streamlit.io cloud. { Apps may be hibernating and need to be woken up }")
+
+# Your apps data & rest of the code here...
+# (Same as before, use 'Permanent Marker' in font-family styles in cards)
+
 
 # --- App Data ---
 apps = [
