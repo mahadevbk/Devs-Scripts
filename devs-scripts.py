@@ -19,7 +19,7 @@ h4, div, button {
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<h1 style="font-family: 'Baumans', font-size: 3rem; margin-bottom: 0.3em;">
+<h1 style="font-family: 'Baumans'; font-size: 3rem; margin-bottom: 0.3em;">
     🧰 Dev's Streamlit App Hub
 </h1>
 """, unsafe_allow_html=True)
