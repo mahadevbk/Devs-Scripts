@@ -19,7 +19,8 @@ h4, div, button {
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<h1 style="font-family: 'Baumans'; font-size: 3rem; margin-bottom: 0.3em;">
+<h1 style="font-family: 'Baumans'; font-size: 3rem; margin-bottom: 0.3em; display: flex; align-items: center; gap: 10px;">
+    <img src="https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/devgreyround.png" alt="Logo" style="height: 40px;"/>
     🧰 Dev's Streamlit App Hub
 </h1>
 """, unsafe_allow_html=True)
