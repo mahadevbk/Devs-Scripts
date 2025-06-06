@@ -13,7 +13,7 @@ st.markdown("""
     src: url('https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/Baumans-Regular.ttf') format('truetype');
 }
 h4, div, button {
-    font-family: 'Baumans',  !important;
+    font-family: 'Baumans'  !important;
 }
 </style>
 """, unsafe_allow_html=True)
