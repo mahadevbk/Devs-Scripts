@@ -13,13 +13,13 @@ st.markdown("""
     src: url('https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/Baumans-Regular.ttf') format('truetype');
 }
 h4, div, button {
-    font-family: 'Baumans', cursive !important;
+    font-family: 'Baumans',  !important;
 }
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<h1 style="font-family: 'Baumans', cursive; font-size: 3rem; margin-bottom: 0.3em;">
+<h1 style="font-family: 'Baumans', font-size: 3rem; margin-bottom: 0.3em;">
     🧰 Dev's Streamlit App Hub
 </h1>
 """, unsafe_allow_html=True)
