@@ -20,7 +20,7 @@ h4, div, button {
 
 st.markdown("""
 <h1 style="font-family: 'Baumans'; font-size: 3.65rem; margin-bottom: 0.3em; display: flex; align-items: center; gap: 14px;">
-    <img src="https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/devgreyround.png" alt="Logo" style="height: 60px;"/>
+    <img src="https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/devgreyround1.png" alt="Logo" style="height: 60px;"/>
            Dev's     Streamlit     App     Hub  
 </h1>
 """, unsafe_allow_html=True)
