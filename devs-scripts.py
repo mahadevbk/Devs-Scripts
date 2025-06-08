@@ -23,6 +23,9 @@ st.markdown("""
     <img src="https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/static/devgreyround1.png" alt="Logo" style="height: 60px;"/>
            Dev's     Streamlit     App     Hub  
 </h1>
+<p style="font-family: 'Baumans'; font-size: 0.9rem; color: grey; margin-top: -10px; margin-bottom: 25px;">
+    Apps may be in suspend state and need to be woken up
+</p>
 """, unsafe_allow_html=True)
 
 # --- App Data ---
