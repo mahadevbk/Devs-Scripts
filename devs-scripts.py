@@ -84,6 +84,12 @@ apps = [
         "desc": "A simple Photo report generator with PDF output.",
         "icon": "https://raw.githubusercontent.com/mahadevbk/Devs-Scripts/main/photoreporticon.png"
     },
+    {
+        "name": "Dev's Stock Analyzer",
+        "url": "https://stockdatascript.streamlit.app//",
+        "desc": "Dev's totally basic Stock Analyzer with Prophet & Arima prediction models",
+        "icon": "https://cdn.jsdelivr.net/npm/@tabler/icons-svg@2.47.0/icons/chart-line.svg"
+    },
 ]
 
 card_height = 350
