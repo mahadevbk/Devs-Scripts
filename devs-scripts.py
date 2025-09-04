@@ -88,7 +88,7 @@ apps = [
         "name": "Dev's Stock Analyzer",
         "url": "https://stockdatascript.streamlit.app//",
         "desc": "Dev's totally basic Stock Analyzer with Prophet & Arima prediction models",
-        "icon": "https://cdn.jsdelivr.net/npm/@tabler/icons-svg@2.47.0/icons/chart-line.svg"
+        "icon": "https://img.icons8.com/ios-filled/100/228BE6/stocks.png"
     },
 ]
 
